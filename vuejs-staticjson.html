@@ -7,9 +7,15 @@
   <title>Static Site Examples</title>
 </head>
 <body>
-  <h1>Static Site Examples</h1>
-  <ul>
-    <li><a href="/vuejs-staticjson.html">VueJs with Static JSON</a></li>
-  </ul>
+  <h1>VueJS</h1>
+  <div id="app">
+    <ul>
+        <li v-for="team in teams">
+        {{ team.name }}
+        </li>
+    </ul>
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+  <script src="vuejs-staticjson.js"></script>  
 </body>
 </html>
