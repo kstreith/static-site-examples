@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VueJS - Fetch data from Star Wars API (swapi)">
+  <title>VueJS - Fetch data from Star Wars API (swapi)</title>
+</head>
+<body>
+  <h1>VueJS - Fetch data from Star Wars API (swapi)</h1>
+  <div id="app">
+    <ul>
+        <li v-for="person in people">
+        {{ person.name }} {{person.birth_year}}
+        </li>
+    </ul>
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+  <script src="vuejs-swapi.js"></script>
+</body>
+</html>
