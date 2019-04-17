@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VueJS - Fetch data from Azure Function">
+  <title>VueJS - Fetch data from Azure Function</title>
+</head>
+<body>
+  <h1>VueJS - Fetch data from Azure Function</h1>
+  <div id="app">
+    <ul>
+        <li v-for="person in people">
+        {{ person.name }}
+        </li>
+    </ul>
+  </div>  
+  <script src="vue.min.js"></script>
+  <script src="vuejs-azfunction.js"></script>
+</body>
+</html>
