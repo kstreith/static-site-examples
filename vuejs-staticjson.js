@@ -9,8 +9,8 @@ var app = new Vue({
     methods: {
         loadTeams: function() {
             fetch('teams.json').then(response => response.json()).then(json => {
-                app.data.teams = json;
-              });
+                this.teams = json;
+            });
         }
     }
 });
